@@ -12,8 +12,8 @@ public class Init {
 	public static WebDriver getDriver () {
 		
 				
-		System.setProperty("webdriver.chrome.driver", "C:/Users/Ewa/Desktop/selenium/chromedriver.exe");
-        	
+		System.setProperty("webdriver.chrome.driver", "C:/Users/Ewa/Desktop/Lait materiały/selenium/chromedriver.exe");
+		//C:\Users\Ewa\Desktop\Lait materiały\selenium
 		driver = new ChromeDriver();
         
 		driver.get("http://newtours.demoaut.com/");
