@@ -57,14 +57,7 @@ public class ReservationTest {
 		airLineSelect.selectByVisibleText("Blue Skies Airlines");
 		
 		driver.findElement(By.name("findFlights")).click();
-		
-		
-		
-		
-		
-			
-		
-				
+					
 	}
 
 	@After
