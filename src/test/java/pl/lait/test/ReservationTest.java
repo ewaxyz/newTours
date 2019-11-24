@@ -61,7 +61,9 @@ public class ReservationTest {
 	}
 
 	@After
-	public void tearDown() {
-		//driver.close();
+  	public void tearDown() {
+  		Init.end();
+  		
+  	}
 	}
-}
+

@@ -22,17 +22,17 @@ public class Init {
 		System.setProperty("webdriver.chrome.driver", "C:/Users/Ewa/Desktop/Lait materiały/selenium/chromedriver.exe");
 		
 		
-		//driver = new ChromeDriver();
+		
 		URL remoteAdress = null;
 		try {
-			remoteAdress = new URL("http://localhost:4444/wd/hub");
+			remoteAdress = new URL("http://192.168.0.112:4444/wd/hub");
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-		driver = new RemoteWebDriver(remoteAdress, capabilities);
-		
+		//driver = new RemoteWebDriver(remoteAdress, capabilities);
+		driver = new ChromeDriver();
 		
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);  
 		
@@ -53,4 +53,10 @@ public class Init {
 	}
 	}
 
+	public static void end() {
+	driver.quit();
+	driver = null;
+	
+		
+	}
 }

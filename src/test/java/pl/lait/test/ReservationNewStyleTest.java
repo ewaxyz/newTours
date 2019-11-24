@@ -1,5 +1,6 @@
 package pl.lait.test;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -23,7 +24,13 @@ public class ReservationNewStyleTest {
 		System.out.println(" -- wewn loginTest");
 		mp.goToLoginPage();
 		mp.loginAs("eses", "kazik123");
+	}
 		
+		@After
+	  	public void tearDown() {
+	  		Init.end();
+	  		
+	  			
 		//ReservationPage
 		//...1 etap
 		//zatwierdzam guzikiem continue
