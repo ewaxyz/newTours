@@ -31,8 +31,8 @@ public class Init {
 			e.printStackTrace();
 		}
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-		//driver = new RemoteWebDriver(remoteAdress, capabilities);
-		driver = new ChromeDriver();
+		driver = new RemoteWebDriver(remoteAdress, capabilities);
+		//driver = new ChromeDriver();
 		
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);  
 		
